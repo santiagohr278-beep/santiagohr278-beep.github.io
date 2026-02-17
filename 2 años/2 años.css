@@ -1,0 +1,719 @@
+header {
+    border-bottom: 1px solid #000;
+}
+/* --INICIO-- */
+.minilogo {
+    font-family: cursive;
+}
+header {
+    display: flex;
+}
+.menus {
+    margin-top: 26PX;
+}
+.menus a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+.menus a:hover {
+    text-decoration: underline;
+}
+section {
+    display: none;
+    padding: 40px;
+}
+body:not(:has(section:target))#INICIO {
+    display: block;
+}
+section:target {
+    display: block;
+}
+/* --FIN DEL INICIO-- */
+/*                                  --CENTRO--                                        */
+
+
+/* --SECCION INICIO-- */
+
+.INICIO {
+    padding: 30px;
+    background-color: #1e1f26
+;
+
+}
+.INICIO h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 55px;
+    margin: 0;
+}
+.INICIO h3 {
+    color: #c79767;
+    text-align: center;
+    font-size: 23px;
+    margin: 0;
+    text-shadow: 0 0px 35px rgba(224, 161, 89, 0.90);
+}
+
+.contenedor-blanco {
+    width: 500px;
+    background: white;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 0px 15px rgb(217, 217, 217);
+}
+
+.contenedor-blanco img {
+    margin: 0 auto;
+    margin-top: 2px;
+    width: 450px;
+    height: 500px;
+    display: block;
+    height: auto;
+}
+
+.contenedor-gris {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 18px;
+    font-size: 19px;
+}
+.BOTON {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* separa el botón del texto */
+}
+
+.boton-carta {
+    background-color: #ff0000; /* color oscuro elegante */
+    color: white;              /* texto blanco */
+    padding: 16px 32px;        /* tamaño del botón */
+    font-size: 16px;           /* tamaño del texto */
+    border: none;              /* sin borde feo */
+    border-radius: 25px;       /* bordes redonditos */
+    cursor: pointer;           /* manito al pasar */
+    transition: 0.3s ease;
+    box-shadow: 0 0px 25px rgba(255, 0, 0, 0.4);    /* animación suave */
+}
+
+/* cuando pasas el mouse */
+.boton-carta:hover {
+    background-color: #333333; /* se aclara un poco */
+    transform: scale(1.09);    /* crece levemente */
+}
+/* --SECCION HISTORIA-- */
+/* TITULOS */
+/* TITULO */
+.HISTORIA {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.titulo-principal {
+    margin: 0;
+    font-size: clamp(48px, 6vw, 100px);
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400;
+}
+
+.subtitulooo {
+    margin: 0;
+    font-size:  clamp(10px, 6vw, 30px);
+    font-family: "Libre Bodoni", serif;
+}
+.titulo-principal,
+.subtitulooo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* CONTENEDOR */
+.historia-contenido {
+    display: flex;
+    gap: 25px; /* antes 1px (eso te mataba todo) */
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+/* COLUMNA IZQUIERDA */
+.historia-izquierda {
+    flex: 1.4;
+    margin-left: 100px;
+}
+
+/* TEXTO */
+.historia-texto,
+.parrafo-3 {
+    max-width: none;
+}
+.parrafo-3 {
+    font-size: 22px;
+}
+/* BLOQUE IMAGENES + TEXTO */
+.historia-bloque {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* TEXTO ENTRE IMAGENES */
+.texto-intermedio {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 85px;
+    max-width: 530px;
+
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: justify;
+
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+.texto-intermedio p {
+    font-size: clamp(14px, 1.4vw, 20px);
+    line-height: 1.5;
+}
+
+.historia-texto p,
+.parrafo-3 {
+    font-size: 22px;
+    text-align: justify;
+}
+
+/* IMÁGENES IZQUIERDA */
+.historia-imagenes {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* imagen vertical */
+.img-angosta {
+    width: 205px;
+    height: 540px;
+    object-fit: cover;
+}
+
+/* imagen horizontal */
+.img-rectangulo {
+    height: auto;
+    object-fit: cover;
+    width: 540px;
+    height: 280px;
+}
+
+
+/* COLUMNA DERECHA */
+.historia-imagen {
+    flex: 1;
+    margin-right: 40px;
+}
+
+/* imagen grande derecha */
+.marco-imagen img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 30px;
+    transform: translateY(-1px);
+}
+
+/* FRASE */
+.frase-corta {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-align: justify;
+    font-size: 25px;
+    margin-top: 44px;
+}
+
+/* TEXTO FINAL DERECHA */
+.ultimo-parrafo p {
+    font-size: 22px;
+    text-align: justify;
+    border-left: 2px solid #000;
+    padding-left: 20px;
+}
+.img-angosta {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.texto-intermedio {
+    position: absolute;
+    top: 180px;
+    left: 220px;
+    max-width: 530px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.img-rectangulo {
+    position: absolute;
+    bottom: 470px;
+    left: 220px;
+}
+
+
+
+
+/* --SECCION MOMENTOS-- */
+/* SECCIÓN MOMENTOS */
+.MOMENTOS {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITULO */
+.momentos-titulo {
+    font-family: "Libre Bodoni", serif;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+/* PÁRRAFO */
+.momentos-descripcion {
+    max-width: 600px;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 80px;
+}
+
+/* CUADRO NEGRO */
+.cuadro-diagonal {
+    margin-top: -90px;
+    position: relative;
+    background: black;
+    padding: 20px 70px;
+    width: fit-content;
+    margin: 0 auto;
+    transform: rotate(40deg);
+}
+.momentos-titulo {
+    color: #ffffff;
+}
+
+/* GALERIA VERTICAL */
+.momentos-galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+/* CONTENEDOR DE CADA FOTO */
+.foto-diagonal {
+    width: 400px;
+    height: 410px;
+    overflow: hidden;
+}
+
+/* IMAGEN */
+.foto-diagonal img {
+    width: 400px;
+    height: 400px;
+    transform: rotate(-90deg);
+    object-fit: cover;
+}
+
+/* CUADROS BLANCOS - GENERADOS AUTOMÁTICAMENTE */
+.cuadritos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* espacio entre cuadritos */
+    position: absolute;
+    top: 40px;
+}
+
+.cuadritos.izquierda { left: 30px; }
+.cuadritos.derecha { right: 30px; }
+
+.cuadrito {
+    width: 30px;
+    height: 23px;
+    background: white;
+    border-radius: 6px; /* bordes redondeados */
+}
+/* NUEVO CONTENEDOR PARA GALERÍA + TÍTULO */
+.momentos-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* AJUSTE DEL TÍTULO FUERA DEL CUADRO */
+.momentos-titulo {
+    font-family: "Bebas Neue", serif;
+    font-size: 130px;
+    text-align: start;
+    position: absolute;
+    right: -300px;
+    bottom: 610px;
+    max-width: 420px;
+    line-height: 1.05;
+    transform: rotate(1deg); /* contrarresta el giro del cuadro */
+    color: rgb(0, 0, 0);
+}
+.momentos-descripcion {
+    line-height: 1.15;
+    font-family: serif;
+    font-size: 30px;
+    text-align: end;
+    position: absolute;
+    right: 560px;
+    bottom: 900px;
+    width: 490px;
+    line-height: 1.05;
+    transform: rotate(1deg); /* contrarresta el giro del cuadro */
+    color: rgb(0, 0, 0);
+}
+
+/* --SECCION LO NUESTRO-- */
+.LO-NUESTRO {
+    text-align: start;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.LO-NUESTRO h2 {
+    font-size: 30px;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+}
+
+.LO-NUESTRO h4 {
+    font-size: 15px;
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+}
+
+.fotos-arriba, 
+.fotos-abajo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.fotos6x6 {
+    display: inline-block; /* pone las fotos en fila */
+}
+
+.fotos-arriba img, 
+.fotos-abajo img {
+    width: 250px;
+    height: 390px;
+    object-fit: cover;
+    margin: 5px;
+}
+.subtitulo-lonuestro {
+    display: inline-block;   /* importante para que la línea no sea gigante */
+    border-bottom: 2px solid black; /* la línea */
+    padding-bottom: 5px;     /* espacio entre texto y línea */
+    width: 400px;   
+}
+.textocom {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.fotos6x6 img {
+    filter: brightness(85%) contrast(120%) saturate(90%) sepia(15%);
+}
+.frase-final {
+    text-align: center;
+}
+
+/* --SECCION 2 AÑOS-- */
+/* ===== SECCION DOS AÑOS ===== */
+
+/* --SECCION DOS AÑOS -- */
+.DOS-AÑOS {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.DOS-AÑOS h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: "Playfair Display", serif;
+}
+
+
+/* CONTENEDOR DE RECUERDOS */
+.recuerdos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+
+/* TARJETA */
+.momento {
+    position: relative;
+}
+
+
+/* OCULTAR CHECKBOX */
+.momento input {
+    display: none;
+}
+
+
+/* BOTON */
+.momento label {
+    display: block;
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.momento label:hover {
+    background: #333;
+}
+
+
+/* CONTENIDO OCULTO */
+.momento div {
+    max-height: 0;
+    overflow: hidden;
+    background: #111; /* negro mientras está cerrado */
+    border-radius: 12px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CUANDO SE ACTIVA (CLICK) */
+.momento input:checked + label + div {
+    max-height: 400px; /* controla altura del cuadrito */
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    opacity: 1;
+    background: #111;
+}
+
+/* IMAGEN CUADRADA PEQUEÑA */
+.momento img {
+    width: 200px;        /* tamaño fijo */
+    height: 200px;       /* cuadrado */
+    object-fit: cover;   /* recorta sin deformar */
+    border-radius: 12px;
+    margin-bottom: 10px;
+
+    /* filtro estilo casete/romántico */
+    filter:
+        brightness(108%)  
+        contrast(100px)     
+        saturate(100%)     
+        sepia(12%)        
+        hue-rotate(-5deg);
+}
+
+/* TEXTO DEBAJO DE LA IMAGEN */
+.momento p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/* PDT más pequeño */
+.PDT {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* OPCIONAL: efecto hover romántico */
+.momento img:hover {
+    filter:
+        brightness(110%)
+        contrast(95%)
+        saturate(80%)
+        sepia(10%)
+        hue-rotate(-3deg);
+    transition: 0.4s ease;
+}
+.momento label {
+    display: block;
+    background: #111;           /* fondo negro */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0); /* sin humo al inicio */
+}
+
+/* efecto hover */
+.momento label:hover {
+    transform: translateY(-3px); /* sube un poquito */
+    background: #111;            /* fondo sigue negro */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6), 
+                0 0 25px rgba(255, 0, 0, 0.4),
+                0 0 35px rgba(255, 0, 0, 0.2); /* efecto “humito rojo” */
+}
+.momento label {
+    display: block;
+    background: #111;           /* fondo negro */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0); /* sin humo al inicio */
+}
+
+/* efecto hover */
+.momento label:hover {
+    transform: translateY(-3px); /* sube un poquito */
+    background: #111;            /* fondo sigue negro */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6), 
+                0 0 25px rgba(255, 0, 0, 0.4),
+                0 0 35px rgba(255, 0, 0, 0.2); /* efecto “humito rojo” */
+}
+.momento label:hover {
+    transform: translateY(-3px);
+    background: #111;
+    box-shadow:
+        0 0 10px rgba(255,0,0,0.5),
+        0 0 20px rgba(255,0,0,0.3),
+        0 0 30px rgba(255,0,0,0.2);
+    animation: humo 1s infinite alternate;
+}
+
+@keyframes humo {
+    0% { box-shadow: 0 0 10px rgba(255,0,0,0.5), 0 0 20px rgba(255,0,0,0.3), 0 0 30px rgba(255,0,0,0.2); }
+    100% { box-shadow: 0 0 20px rgba(255,0,0,0.6), 0 0 25px rgba(255,0,0,0.4), 0 0 35px rgba(255,0,0,0.3); }
+}
+/* seleccionamos los corazones dentro del h2 */
+h2 span.corazon {
+    display: inline-block;        /* necesario para animar */
+    animation: latido 1s infinite; /* nombre de animación, duración, repetición */
+}
+
+/* animación de latido */
+@keyframes latido {
+    0%, 100% { transform: scale(1); }    /* tamaño normal */
+    50% { transform: scale(1.3); }      /* crece al 130% */
+}
+
+
+
+
+
+/* --SECCION PARA TI-- */
+
+* {
+    box-sizing: border-box;
+}
+
+.tittle {
+    font-size: 50px;
+    text-align: center;
+}
+
+.parrafosos {
+    text-align: justify;
+}
+
+.FOR-YOU {
+    position: relative;
+    margin: 0;
+}
+
+.posdata {
+    text-align: center;
+    margin: 0;
+}
+
+
+/* ===== CONTENEDOR PRINCIPAL (2 COLUMNAS) ===== */
+.Contenedor {
+    display: grid;
+    grid-template-columns: max-content 1fr; /* tamaños de columnas */
+    gap: 40px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0;
+    padding: 0px 130px;
+}
+
+
+/* ===== COLUMNA IZQUIERDA ===== */
+.columna-izquierda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* LETRA VERTICAL */
+.verticalmente {
+    font-size: clamp(40px, 8vw, 120px);
+    font-family: "Bodoni Moda", serif;
+    font-weight: 200;
+    writing-mode: vertical-rl;
+    margin: 0;
+    text-align: center;
+    max-width: 100%; /* 👈 nunca se sale */
+    white-space: nowrap;
+}
+
+
+/* ===== COLUMNA DERECHA ===== */
+.columna-derecha {
+    padding-right: 50px;
+    position: relative;
+    width: 100%; /* 👈 importante */
+}
+
+
+/* LETRAS GRANDES DERECHA */
+.grandes-letras {
+    position: relative;
+}
+
+
+/* TEXTO GRANDE */
+.horizontalmenete {
+    font-size: clamp(60px, 10vw, 150px);
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
